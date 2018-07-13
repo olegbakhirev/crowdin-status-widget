@@ -1,0 +1,22 @@
+{
+  "key": "crowdin-project-status-widget",
+  "name": "Crowdin project status widget",
+  "version": "1.0.0",
+  "description": "Widget for displaying translation status for project in Crowdin",
+  "author": "Oleg Bakhirev <oleg.bakhirev@gmail.com>",
+  "iconUrl": "pict/crowdin.ico",
+  "capabilities": {
+    "topNavigation": true,
+    "popups": true
+  },
+  "dependencies": {
+    "Hub": ">=2017.4"
+  },
+  "products": {
+    "Hub": ">=2017.4"
+  },
+  "view": {
+    "defaultWidth": 4,
+    "defaultHeight": 3
+  }
+}
