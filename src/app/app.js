@@ -6,6 +6,9 @@ import {render} from 'react-dom';
 import Panel from '@jetbrains/ring-ui/components/panel/panel';
 import Button from '@jetbrains/ring-ui/components/button/button';
 import Input from '@jetbrains/ring-ui/components/input/input';
+import Link, {linkHOC} from '@jetbrains/ring-ui/components/link/link';
+import Text from '@jetbrains/ring-ui/components/text/text';
+import Loader from '@jetbrains/ring-ui/components/loader/loader';
 import fetchJsonp from 'fetch-jsonp';
 import '@jetbrains/ring-ui/components/form/form.scss';
 
@@ -28,7 +31,7 @@ class Widget extends Component {
 
     this.state = {
       isConfiguring: true,
-      dataFetchError: 'Please configure correct Сrowdin project Id and API key first'
+      dataFetchFailed: false
     };
 
     registerWidgetApi({
@@ -107,18 +110,19 @@ class Widget extends Component {
   }
 
   loadCrowdinData() {
+    this.setState({data: null, dataFetchFailed: false});
     fetchJsonp(`https://api.crowdin.com/api/project/${this.state.projectId}/status?key=${this.state.apiKey}`, {
       jsonpCallback: 'jsonp'
     }).then(response => response.json()).then(json => {
-      this.setState({data: json, dataFetchError: ''});
+      this.setState({data: json, dataFetchFailed: ''});
     }).catch(() => {
-      this.setState({data: null, dataFetchError: 'Data fetch error. Check your project ID and API key settings'});
+      this.setState({data: null, dataFetchFailed: true});
     }
     );
   }
 
   render() {
-    const {isConfiguring, data, dataFetchError} = this.state;
+    const {isConfiguring, data, dataFetchFailed} = this.state;
 
     if (isConfiguring) {
       return this.renderConfiguration();
@@ -128,9 +132,9 @@ class Widget extends Component {
       const crowdinProjectUrl = `https://crowdin.com/project/${this.state.projectId}/`;
 
       return (
-        <div>
-          <p>{`Project ID: ${this.state.projectId}`}</p>
-          <table className={styles.widget}>
+        <div className={styles.widget}>
+          <Text className={'title'}>{`Project ID: ${this.state.projectId}`}</Text>
+          <table >
             <tbody>
               {data.map(language => {
                 let flagFilename;
@@ -140,17 +144,17 @@ class Widget extends Component {
                   flagFilename = 'pict/default_flag.png';
                 }
                 return (<tr key={language.name} style={{width: '55px'}}>
-                  <td xs={1}>
+                  <td>
                     <div><img className={'flag'} src={flagFilename}/></div>
                   </td>
-                  <td s={7} xs={4}>
+                  <td>
                     <div>{`${language.name} ${language.translated_progress}%`}</div>
                   </td>
                   <td style={{width: '20%'}}>
                     <div>
-                      <a className={'link'} href={`${crowdinProjectUrl}${language.code}#`}>
+                      <Link href={`${crowdinProjectUrl}${language.code}#`}>
                         {`Missing ${language.words - language.words_translated} phrases`}
-                      </a>
+                      </Link>
                     </div>
                   </td>
                 </tr>);
@@ -159,9 +163,13 @@ class Widget extends Component {
           </table>
         </div>
       );
+    }
+
+    if (dataFetchFailed) {
+      return <div><Text className={`${styles.widget} ${styles.error}`}>Failed fetching data from Crowdin!</Text></div>;
     } else {
       return (
-        <div><p>{dataFetchError}</p></div>);
+        <div><Loader message="Loading..."/></div>);
     }
   }
 }
