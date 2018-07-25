@@ -153,7 +153,7 @@ class Widget extends Component {
                   <td style={{width: '20%'}}>
                     <div>
                       <Link href={`${crowdinProjectUrl}${language.code}#`}>
-                        {`Missing ${language.words - language.words_translated} phrases`}
+                        {`Missing ${language.words - language.words_translated} words`}
                       </Link>
                     </div>
                   </td>
