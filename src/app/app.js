@@ -110,6 +110,8 @@ class Widget extends Component {
   }
 
   loadCrowdinData() {
+    const {dashboardApi} = this.props;
+    dashboardApi.setTitle(`Project: ${this.state.projectId}`);
     this.setState({data: null, dataFetchFailed: false});
     fetchJsonp(`https://api.crowdin.com/api/project/${this.state.projectId}/status?key=${this.state.apiKey}`, {
       jsonpCallback: 'jsonp'
@@ -133,7 +135,6 @@ class Widget extends Component {
 
       return (
         <div className={styles.widget}>
-          <Text className={'title'}>{`Project ID: ${this.state.projectId}`}</Text>
           <table >
             <tbody>
               {data.map(language => {
