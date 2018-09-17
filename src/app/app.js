@@ -1,12 +1,13 @@
 import 'babel-polyfill';
 import DashboardAddons from 'hub-dashboard-addons';
+import {setLocale, i18n} from 'hub-dashboard-addons/dist/localization';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {render} from 'react-dom';
 import Panel from '@jetbrains/ring-ui/components/panel/panel';
 import Button from '@jetbrains/ring-ui/components/button/button';
 import Input from '@jetbrains/ring-ui/components/input/input';
-import Link, {linkHOC} from '@jetbrains/ring-ui/components/link/link';
+import Link from '@jetbrains/ring-ui/components/link/link';
 import Text from '@jetbrains/ring-ui/components/text/text';
 import Loader from '@jetbrains/ring-ui/components/loader/loader';
 import fetchJsonp from 'fetch-jsonp';
@@ -14,6 +15,8 @@ import '@jetbrains/ring-ui/components/form/form.scss';
 
 
 import 'file-loader?name=[name].[ext]!../../manifest.json'; // eslint-disable-line import/no-unresolved
+
+import TRANSLATIONS from './translations';
 
 import styles from './app.css';
 
@@ -87,7 +90,7 @@ class Widget extends Component {
       <div className={styles.widget}>
         <div className="ring-form__group">
           <Input
-            placeholder="Project id"
+            placeholder={i18n('Project id')}
             onChange={this.changeProjectId}
             value={projectId}
           />
@@ -95,15 +98,15 @@ class Widget extends Component {
 
         <div className="ring-form__group">
           <Input
-            placeholder="API key"
+            placeholder={i18n('API key')}
             onChange={this.changeApiKey}
             value={apiKey}
             type="password"
           />
         </div>
         <Panel>
-          <Button blue={true} onClick={this.saveConfig}>{'Save'}</Button>
-          <Button onClick={this.cancelConfig}>{'Cancel'}</Button>
+          <Button blue={true} onClick={this.saveConfig}>{i18n('Save')}</Button>
+          <Button onClick={this.cancelConfig}>{i18n('Cancel')}</Button>
         </Panel>
       </div>
     );
@@ -111,7 +114,9 @@ class Widget extends Component {
 
   loadCrowdinData() {
     const {dashboardApi} = this.props;
-    dashboardApi.setTitle(`Project: ${this.state.projectId}`);
+    dashboardApi.setTitle(
+      i18n('Project: {{projectId}}', {projectId: this.state.projectId})
+    );
     this.setState({data: null, dataFetchFailed: false});
     fetchJsonp(`https://api.crowdin.com/api/project/${this.state.projectId}/status?key=${this.state.apiKey}`, {
       jsonpCallback: 'jsonp'
@@ -132,6 +137,12 @@ class Widget extends Component {
 
     if (data) {
       const crowdinProjectUrl = `https://crowdin.com/project/${this.state.projectId}/`;
+
+      const getMissingCountString = missingCount => (
+        missingCount === 1
+          ? i18n('Missing 1 word')
+          : i18n('Missing {{missingCount}} words', {missingCount}, missingCount)
+      );
 
       return (
         <div className={styles.widget}>
@@ -154,7 +165,7 @@ class Widget extends Component {
                   <td style={{width: '20%'}}>
                     <div>
                       <Link href={`${crowdinProjectUrl}${language.code}#`}>
-                        {`Missing ${language.words - language.words_translated} words`}
+                        {getMissingCountString(language.words - language.words_translated)}
                       </Link>
                     </div>
                   </td>
@@ -167,20 +178,31 @@ class Widget extends Component {
     }
 
     if (dataFetchFailed) {
-      return <div><Text className={`${styles.widget} ${styles.error}`}>Failed fetching data from Crowdin!</Text></div>;
+      return (
+        <div>
+          <Text className={`${styles.widget} ${styles.error}`}>
+            {i18n('Failed fetching data from Crowdin!')}
+          </Text>
+        </div>
+      );
     } else {
       return (
-        <div><Loader message="Loading..."/></div>);
+        <div>
+          <Loader message={i18n('Loading...')}/>
+        </div>
+      );
     }
   }
 }
 
-DashboardAddons.registerWidget((dashboardApi, registerWidgetApi) =>
-  render(
+DashboardAddons.registerWidget((dashboardApi, registerWidgetApi) => {
+  setLocale(DashboardAddons.locale, TRANSLATIONS);
+
+  return render(
     <Widget
       dashboardApi={dashboardApi}
       registerWidgetApi={registerWidgetApi}
     />,
     document.getElementById('app-container')
-  )
-);
+  );
+});

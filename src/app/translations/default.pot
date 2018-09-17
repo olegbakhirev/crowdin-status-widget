@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: src/app/app.js:101
+msgid "API key"
+msgstr ""
+
+#: src/app/app.js:109
+msgid "Cancel"
+msgstr ""
+
+#: src/app/app.js:184
+msgid "Failed fetching data from Crowdin!"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
+msgid "January|February|March|April|May|June|July|August|September|October|November|December"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
+msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
+msgstr ""
+
+#: src/app/app.js:191
+msgid "Loading..."
+msgstr ""
+
+#: src/app/app.js:143
+msgid "Missing 1 word"
+msgstr ""
+
+#: src/app/app.js:144
+msgid "Missing {{missingCount}} words"
+msgstr ""
+
+#: src/app/app.js:93
+msgid "Project id"
+msgstr ""
+
+#: src/app/app.js:118
+msgid "Project: {{projectId}}"
+msgstr ""
+
+#: src/app/app.js:108
+msgid "Save"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
+msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
+msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
+msgid "am|pm"
+msgstr ""
