@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import {render} from 'react-dom';
 import Panel from '@jetbrains/ring-ui/components/panel/panel';
 import Button from '@jetbrains/ring-ui/components/button/button';
-import Input from '@jetbrains/ring-ui/components/input/input';
+import Input, {Size as InputSize} from '@jetbrains/ring-ui/components/input/input';
 import Link from '@jetbrains/ring-ui/components/link/link';
 import Text from '@jetbrains/ring-ui/components/text/text';
 import Loader from '@jetbrains/ring-ui/components/loader/loader';
@@ -93,6 +93,7 @@ class Widget extends Component {
             placeholder={i18n('Project id')}
             onChange={this.changeProjectId}
             value={projectId}
+            size={InputSize.FULL}
           />
         </div>
 
@@ -101,10 +102,11 @@ class Widget extends Component {
             placeholder={i18n('API key')}
             onChange={this.changeApiKey}
             value={apiKey}
+            size={InputSize.FULL}
             type="password"
           />
         </div>
-        <Panel>
+        <Panel className={styles.formFooter}>
           <Button blue={true} onClick={this.saveConfig}>{i18n('Save')}</Button>
           <Button onClick={this.cancelConfig}>{i18n('Cancel')}</Button>
         </Panel>

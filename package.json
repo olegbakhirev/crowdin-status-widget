@@ -24,7 +24,7 @@
     "@jetbrains/babel-preset-jetbrains": "1.1.0",
     "@jetbrains/icons": "1.17.0",
     "@jetbrains/logos": "1.0.0",
-    "@jetbrains/ring-ui": "^0.4.59",
+    "@jetbrains/ring-ui": "^1.0.0-beta.198",
     "angular-gettext-cli": "1.2.0",
     "angular-gettext-loader": "1.0.1",
     "babel-core": "6.26.0",
