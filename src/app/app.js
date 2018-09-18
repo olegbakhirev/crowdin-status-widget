@@ -116,18 +116,21 @@ class Widget extends Component {
 
   loadCrowdinData() {
     const {dashboardApi} = this.props;
+    const {projectId, apiKey} = this.state;
+
     dashboardApi.setTitle(
-      i18n('Project: {{projectId}}', {projectId: this.state.projectId})
+      projectId
+        ? i18n('Project: {{projectId}}', {projectId})
+        : i18n('Crowdin Project Status')
     );
     this.setState({data: null, dataFetchFailed: false});
-    fetchJsonp(`https://api.crowdin.com/api/project/${this.state.projectId}/status?key=${this.state.apiKey}`, {
+    fetchJsonp(`https://api.crowdin.com/api/project/${projectId}/status?key=${apiKey}`, {
       jsonpCallback: 'jsonp'
     }).then(response => response.json()).then(json => {
       this.setState({data: json, dataFetchFailed: ''});
     }).catch(() => {
       this.setState({data: null, dataFetchFailed: true});
-    }
-    );
+    });
   }
 
   render() {
