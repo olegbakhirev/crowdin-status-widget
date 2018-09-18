@@ -8,7 +8,7 @@ import Panel from '@jetbrains/ring-ui/components/panel/panel';
 import Button from '@jetbrains/ring-ui/components/button/button';
 import Input, {Size as InputSize} from '@jetbrains/ring-ui/components/input/input';
 import Link from '@jetbrains/ring-ui/components/link/link';
-import Text from '@jetbrains/ring-ui/components/text/text';
+import EmptyWidget, {EmptyWidgetFaces} from '@jetbrains/hub-widget-ui/dist/empty-widget';
 import Loader from '@jetbrains/ring-ui/components/loader/loader';
 import fetchJsonp from 'fetch-jsonp';
 import '@jetbrains/ring-ui/components/form/form.scss';
@@ -180,11 +180,24 @@ class Widget extends Component {
     }
 
     if (dataFetchFailed) {
+      const editWidgetSettings = () => {
+        this.props.dashboardApi.enterConfigMode();
+        this.setState({isConfiguring: true});
+      };
+
       return (
-        <div>
-          <Text className={`${styles.widget} ${styles.error}`}>
-            {i18n('Failed fetching data from Crowdin!')}
-          </Text>
+        <div className={styles.widget}>
+          <EmptyWidget
+            face={EmptyWidgetFaces.ERROR}
+            message={i18n('Failed fetching data from Crowdin.')}
+          >
+            <Link
+              pseudo={true}
+              onClick={editWidgetSettings}
+            >
+              {i18n('Set project and API key')}
+            </Link>
+          </EmptyWidget>
         </div>
       );
     } else {
