@@ -107,8 +107,16 @@ class Widget extends Component {
           />
         </div>
         <Panel className={styles.formFooter}>
-          <Button blue={true} onClick={this.saveConfig}>{i18n('Save')}</Button>
-          <Button onClick={this.cancelConfig}>{i18n('Cancel')}</Button>
+          <Button
+            blue={true}
+            disabled={!apiKey || !projectId}
+            onClick={this.saveConfig}
+          >
+            {i18n('Save')}
+          </Button>
+          <Button onClick={this.cancelConfig}>
+            {i18n('Cancel')}
+          </Button>
         </Panel>
       </div>
     );
