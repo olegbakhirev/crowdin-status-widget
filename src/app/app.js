@@ -151,11 +151,14 @@ class Widget extends Component {
     if (data) {
       const crowdinProjectUrl = `https://crowdin.com/project/${this.state.projectId}/`;
 
-      const getMissingCountString = missingCount => (
-        missingCount === 1
+      const getMissingCountString = missingCount => {
+        if (missingCount < 1) {
+          return i18n('done!');
+        }
+        return missingCount === 1
           ? i18n('Missing 1 word')
           : i18n('Missing {{missingCount}} words', {missingCount}, missingCount)
-      );
+      };
 
       return (
         <div className={styles.widget}>
