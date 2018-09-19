@@ -11,4 +11,73 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2018-09-13 21:11\n"
+"PO-Revision-Date: 2018-09-19 11:51\n"
+
+#: src/app/app.js:102
+msgid "API key"
+msgstr ""
+
+#: src/app/app.js:118
+msgid "Cancel"
+msgstr ""
+
+#: src/app/app.js:132
+msgid "Crowdin Project Status"
+msgstr ""
+
+#: src/app/app.js:206
+msgid "Failed fetching data from Crowdin."
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
+msgid "January|February|March|April|May|June|July|August|September|October|November|December"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
+msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
+msgstr ""
+
+#: src/app/app.js:220
+msgid "Loading..."
+msgstr ""
+
+#: src/app/app.js:159
+msgid "Missing 1 word"
+msgstr ""
+
+#: src/app/app.js:160
+msgid "Missing {{missingCount}} words"
+msgstr ""
+
+#: src/app/app.js:93
+msgid "Project id"
+msgstr ""
+
+#: src/app/app.js:131
+msgid "Project: {{projectId}}"
+msgstr ""
+
+#: src/app/app.js:115
+msgid "Save"
+msgstr ""
+
+#: src/app/app.js:212
+msgid "Set project and API key"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
+msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
+msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
+msgstr ""
+
+#: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
+msgid "am|pm"
+msgstr ""
+
+#: src/app/app.js:156
+msgid "done!"
+msgstr ""
+
