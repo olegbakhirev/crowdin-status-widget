@@ -1,45 +1,78 @@
 @value unit, font, font-size from "@jetbrains/ring-ui/components/global/global.css";
 
 :global(.widget-body) {
-  margin: 0;
-  padding: calc(unit * 2);
+    margin: 0;
+    padding: calc(unit * 2);
 
-  background: #fff;
+    background: #fff;
 
-  font-size: font-size;
+    font-size: font-size;
 }
 
 .widget {
-  composes: font;
+    composes: font;
 
-  width: 100%;
+    width: 100%;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 :global(.flag) {
-  width: 40px;
-  height: 20px;
-  padding-top: 5px;
-  padding-right: 5px;
-
-  vertical-align: middle;
+    width: 22px;
+    padding-top: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+    position: relative;
+    top: -4px;
+    margin-right: 8px;
 }
 
 .error {
-  text-wrap: normal;
+    text-wrap: normal;
 
-  color: red;
+    color: red;
 }
 
 .formFooter {
-  position: fixed;
+    position: fixed;
 
-  right: 0;
-  bottom: 0;
-  left: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
+.languageProgressContainer {
+    position: relative;
+
+    border-bottom: 1px dashed var(--ring-border-disabled-color);
+}
+
+.languageProgressContainer:hover {
+    background-color: var(--ring-hover-background-color);
+    cursor: pointer;
+}
+
+.languageProgressBar {
+    position: absolute;
+
+    border-bottom: 1px solid var(--ring-main-color);
+}
+
+.crowdinLink {
+    float: right;
+
+    margin-left: 24px;
+    color: var(--ring-secondary-color);
+}
+
+.languageProgressText {
+    float: left;
+}
+
+.statusTextContainer {
+    height: 24px;
+    padding: 4px;
+}

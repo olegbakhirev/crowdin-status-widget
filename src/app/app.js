@@ -153,7 +153,7 @@ class Widget extends Component {
 
       const getMissingCountString = missingCount => {
         if (missingCount < 1) {
-          return i18n('done!');
+          return i18n('Done!');
         }
         return missingCount === 1
           ? i18n('Missing 1 word')
@@ -173,16 +173,20 @@ class Widget extends Component {
                 }
                 return (<tr key={language.name} style={{width: '55px'}}>
                   <td>
-                    <div><img className={'flag'} src={flagFilename}/></div>
-                  </td>
-                  <td>
-                    <div>{`${language.name} ${language.translated_progress}%`}</div>
-                  </td>
-                  <td style={{width: '20%'}}>
-                    <div>
-                      <Link href={`${crowdinProjectUrl}${language.code}#`}>
-                        {getMissingCountString(language.words - language.words_translated)}
-                      </Link>
+                    <div className={styles.languageProgressContainer} onClick={() => window.open(`${crowdinProjectUrl}${language.code}#`, '_blank')}>
+                      <div className={styles.statusTextContainer}>
+                        <div className={styles.languageProgressText}>
+                          <img className={'flag'}
+                            src={flagFilename} width={'16px'}/>
+                          {`${language.name} ${language.translated_progress}%`}
+                        </div>
+                        <div className={styles.crowdinLink}>
+                          {getMissingCountString(
+                            language.words - language.words_translated)}
+                        </div>
+                      </div>
+                      <div className={styles.languageProgressBar}
+                        style={{width: `${language.translated_progress}%`}}></div>
                     </div>
                   </td>
                 </tr>);
