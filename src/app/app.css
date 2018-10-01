@@ -76,3 +76,7 @@
     height: 24px;
     padding: 4px;
 }
+
+.translationBlockWrapper {
+    min-width: 400px;
+}

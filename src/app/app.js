@@ -157,42 +157,39 @@ class Widget extends Component {
         }
         return missingCount === 1
           ? i18n('Missing 1 word')
-          : i18n('Missing {{missingCount}} words', {missingCount}, missingCount)
+          : i18n('Missing {{missingCount}} words',
+            {missingCount}, missingCount);
       };
 
       return (
         <div className={styles.widget}>
-          <table >
-            <tbody>
-              {data.map(language => {
-                let flagFilename;
-                if (flaggedLanguages.indexOf(language.name) > -1) {
-                  flagFilename = `pict/${language.name.toLowerCase()}_flag.png`;
-                } else {
-                  flagFilename = 'pict/default_flag.png';
-                }
-                return (<tr key={language.name} style={{width: '55px'}}>
-                  <td>
-                    <div className={styles.languageProgressContainer} onClick={() => window.open(`${crowdinProjectUrl}${language.code}#`, '_blank')}>
-                      <div className={styles.statusTextContainer}>
-                        <div className={styles.languageProgressText}>
-                          <img className={'flag'}
-                            src={flagFilename} width={'16px'}/>
-                          {`${language.name} ${language.translated_progress}%`}
-                        </div>
-                        <div className={styles.crowdinLink}>
-                          {getMissingCountString(
-                            language.words - language.words_translated)}
-                        </div>
-                      </div>
-                      <div className={styles.languageProgressBar}
-                        style={{width: `${language.translated_progress}%`}}></div>
+          <div className={styles.translationBlockWrapper}>
+            {data.map(language => {
+              let flagFilename;
+              if (flaggedLanguages.indexOf(language.name) > -1) {
+                flagFilename = `pict/${language.name.toLowerCase()}_flag.png`;
+              } else {
+                flagFilename = 'pict/default_flag.png';
+              }
+              return (
+                <div className={styles.languageProgressContainer} onClick={() => window.open(`${crowdinProjectUrl}${language.code}#`, '_blank')}>
+                  <div className={styles.statusTextContainer}>
+                    <div className={styles.languageProgressText}>
+                      <img className={'flag'}
+                        src={flagFilename} width={'16px'}/>
+                      {`${language.name} ${language.translated_progress}%`}
                     </div>
-                  </td>
-                </tr>);
-              })}
-            </tbody>
-          </table>
+                    <div className={styles.crowdinLink}>
+                      {getMissingCountString(
+                        language.words - language.words_translated)}
+                    </div>
+                  </div>
+                  <div className={styles.languageProgressBar}
+                    style={{width: `${language.translated_progress}%`}}></div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       );
     }
