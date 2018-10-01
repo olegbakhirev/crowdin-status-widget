@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2018-10-01 18:20\n"
+"PO-Revision-Date: 2018-10-01 18:41\n"
 
 #: src/app/app.js:102
 msgid "API key"
@@ -29,7 +29,7 @@ msgstr "Crowdin-Projektstatus"
 msgid "Done!"
 msgstr ""
 
-#: src/app/app.js:210
+#: src/app/app.js:207
 msgid "Failed fetching data from Crowdin."
 msgstr "Datenabruf von Crowdin fehlgeschlagen."
 
@@ -41,7 +41,7 @@ msgstr "Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|Novemb
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
 msgstr "Jan|Feb|Mär|Apr|Mai|Jun|Jul|Aug|Sep|Okt|Nov|Dez"
 
-#: src/app/app.js:224
+#: src/app/app.js:221
 msgid "Loading..."
 msgstr "Wird geladen ..."
 
@@ -65,7 +65,7 @@ msgstr "Projekt: {{projectId}}"
 msgid "Save"
 msgstr "Speichern"
 
-#: src/app/app.js:216
+#: src/app/app.js:213
 msgid "Set project and API key"
 msgstr "Projekt- und API-Schlüssel festlegen"
 

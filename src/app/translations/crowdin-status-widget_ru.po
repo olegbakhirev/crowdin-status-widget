@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2018-10-01 18:20\n"
+"PO-Revision-Date: 2018-10-01 18:41\n"
 
 #: src/app/app.js:102
 msgid "API key"
@@ -29,7 +29,7 @@ msgstr "Статус проекта в Crowdin"
 msgid "Done!"
 msgstr ""
 
-#: src/app/app.js:210
+#: src/app/app.js:207
 msgid "Failed fetching data from Crowdin."
 msgstr "Не удалось получить данные из Crowdin."
 
@@ -41,7 +41,7 @@ msgstr "январь|февраль|март|апрель|май|июнь|июл
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
 msgstr "янв|фев|мар|апр|мая|июн|июл|авг|сен|окт|ноя|дек"
 
-#: src/app/app.js:224
+#: src/app/app.js:221
 msgid "Loading..."
 msgstr "Загрузка..."
 
@@ -65,7 +65,7 @@ msgstr "Проект: {{projectId}}"
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/app/app.js:216
+#: src/app/app.js:213
 msgid "Set project and API key"
 msgstr ""
 
