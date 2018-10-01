@@ -11,73 +11,73 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2018-09-19 11:51\n"
+"PO-Revision-Date: 2018-10-01 18:20\n"
 
 #: src/app/app.js:102
 msgid "API key"
-msgstr ""
+msgstr "Clé d'API"
 
 #: src/app/app.js:118
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: src/app/app.js:132
 msgid "Crowdin Project Status"
+msgstr "Statut du projet Crowdin"
+
+#: src/app/app.js:156
+msgid "Done!"
 msgstr ""
 
-#: src/app/app.js:206
+#: src/app/app.js:210
 msgid "Failed fetching data from Crowdin."
-msgstr ""
+msgstr "Impossible d'extraire les données de Crowdin."
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
-msgstr ""
+msgstr "Janvier|Février|Mars|Avril|Mai|Juin|Juillet|Août|Septembre|Octobre|Novembre|Décembre"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
-msgstr ""
+msgstr "Jan|Fév|Mar|Avr|Mai|Jun|Jul|Aoû|Sep|Oct|Nov|Déc"
 
-#: src/app/app.js:220
+#: src/app/app.js:224
 msgid "Loading..."
-msgstr ""
+msgstr "Chargement en cours..."
 
 #: src/app/app.js:159
 msgid "Missing 1 word"
-msgstr ""
+msgstr "1 mot manquant"
 
 #: src/app/app.js:160
 msgid "Missing {{missingCount}} words"
-msgstr ""
+msgstr "{{missingCount}} mots manquants"
 
 #: src/app/app.js:93
 msgid "Project id"
-msgstr ""
+msgstr "ID projet"
 
 #: src/app/app.js:131
 msgid "Project: {{projectId}}"
-msgstr ""
+msgstr "Projet : {{projectId}}"
 
 #: src/app/app.js:115
 msgid "Save"
-msgstr ""
+msgstr "Enregistrer"
 
-#: src/app/app.js:212
+#: src/app/app.js:216
 msgid "Set project and API key"
-msgstr ""
+msgstr "Définir le projet et la clé d'API"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
-msgstr ""
+msgstr "Dimanche|Lundi|Mardi|Mercredi|Jeudi|Vendredi|Samedi"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
 msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
-msgstr ""
+msgstr "Dim|Lun|Mar|Mer|Jeu|Ven|Sam"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
-msgstr ""
-
-#: src/app/app.js:156
-msgid "done!"
-msgstr ""
+msgstr "am|pm"
 

@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2018-09-19 11:51\n"
+"PO-Revision-Date: 2018-10-01 18:20\n"
 
 #: src/app/app.js:102
 msgid "API key"
@@ -25,7 +25,11 @@ msgstr ""
 msgid "Crowdin Project Status"
 msgstr ""
 
-#: src/app/app.js:206
+#: src/app/app.js:156
+msgid "Done!"
+msgstr ""
+
+#: src/app/app.js:210
 msgid "Failed fetching data from Crowdin."
 msgstr ""
 
@@ -37,7 +41,7 @@ msgstr ""
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
 msgstr ""
 
-#: src/app/app.js:220
+#: src/app/app.js:224
 msgid "Loading..."
 msgstr ""
 
@@ -61,7 +65,7 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: src/app/app.js:212
+#: src/app/app.js:216
 msgid "Set project and API key"
 msgstr ""
 
@@ -75,9 +79,5 @@ msgstr ""
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
-msgstr ""
-
-#: src/app/app.js:156
-msgid "done!"
 msgstr ""
 

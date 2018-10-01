@@ -11,73 +11,73 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2018-09-19 11:51\n"
+"PO-Revision-Date: 2018-10-01 18:20\n"
 
 #: src/app/app.js:102
 msgid "API key"
-msgstr ""
+msgstr "APIキー"
 
 #: src/app/app.js:118
 msgid "Cancel"
-msgstr ""
+msgstr "取り消す"
 
 #: src/app/app.js:132
 msgid "Crowdin Project Status"
+msgstr "Crowdinプロジェクトステータス"
+
+#: src/app/app.js:156
+msgid "Done!"
 msgstr ""
 
-#: src/app/app.js:206
+#: src/app/app.js:210
 msgid "Failed fetching data from Crowdin."
-msgstr ""
+msgstr "Crowdinからデータを取得できませんでした。"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
-msgstr ""
+msgstr "1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
-msgstr ""
+msgstr "1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月"
 
-#: src/app/app.js:220
+#: src/app/app.js:224
 msgid "Loading..."
-msgstr ""
+msgstr "読み込んでいます…"
 
 #: src/app/app.js:159
 msgid "Missing 1 word"
-msgstr ""
+msgstr "1語足りません"
 
 #: src/app/app.js:160
 msgid "Missing {{missingCount}} words"
-msgstr ""
+msgstr "{{missingCount}}語足りません"
 
 #: src/app/app.js:93
 msgid "Project id"
-msgstr ""
+msgstr "プロジェクトid"
 
 #: src/app/app.js:131
 msgid "Project: {{projectId}}"
-msgstr ""
+msgstr "プロジェクト：{{projectId}}"
 
 #: src/app/app.js:115
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
-#: src/app/app.js:212
+#: src/app/app.js:216
 msgid "Set project and API key"
-msgstr ""
+msgstr "プロジェクトとAPIキーを設定"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
-msgstr ""
+msgstr "日曜日|月曜日|火曜日|水曜日|木曜日|金曜日|土曜日"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
 msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
-msgstr ""
+msgstr "日|月|火|水|木|金|土"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
-msgstr ""
-
-#: src/app/app.js:156
-msgid "done!"
-msgstr ""
+msgstr "am|pm"
 
