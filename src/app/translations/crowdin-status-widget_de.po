@@ -11,25 +11,25 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2018-10-01 18:41\n"
+"PO-Revision-Date: 2018-10-02 14:49\n"
 
-#: src/app/app.js:102
+#: src/app/app.js:109
 msgid "API key"
 msgstr "API-Schlüssel"
 
-#: src/app/app.js:118
+#: src/app/app.js:125
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/app/app.js:132
+#: src/app/app.js:139
 msgid "Crowdin Project Status"
 msgstr "Crowdin-Projektstatus"
 
-#: src/app/app.js:156
+#: src/app/app.js:163
 msgid "Done!"
-msgstr ""
+msgstr "Erledigt!"
 
-#: src/app/app.js:207
+#: src/app/app.js:214
 msgid "Failed fetching data from Crowdin."
 msgstr "Datenabruf von Crowdin fehlgeschlagen."
 
@@ -41,31 +41,31 @@ msgstr "Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|Novemb
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
 msgstr "Jan|Feb|Mär|Apr|Mai|Jun|Jul|Aug|Sep|Okt|Nov|Dez"
 
-#: src/app/app.js:221
+#: src/app/app.js:228
 msgid "Loading..."
 msgstr "Wird geladen ..."
 
-#: src/app/app.js:159
+#: src/app/app.js:166
 msgid "Missing 1 word"
 msgstr "1 Wort fehlt"
 
-#: src/app/app.js:160
+#: src/app/app.js:167
 msgid "Missing {{missingCount}} words"
 msgstr "{{missingCount}} Wörter fehlen"
 
-#: src/app/app.js:93
+#: src/app/app.js:100
 msgid "Project id"
 msgstr "Projekt-ID"
 
-#: src/app/app.js:131
+#: src/app/app.js:138
 msgid "Project: {{projectId}}"
 msgstr "Projekt: {{projectId}}"
 
-#: src/app/app.js:115
+#: src/app/app.js:122
 msgid "Save"
 msgstr "Speichern"
 
-#: src/app/app.js:213
+#: src/app/app.js:220
 msgid "Set project and API key"
 msgstr "Projekt- und API-Schlüssel festlegen"
 
