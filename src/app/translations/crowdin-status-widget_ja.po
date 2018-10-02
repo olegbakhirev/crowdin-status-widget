@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2018-10-02 14:49\n"
+"PO-Revision-Date: 2018-10-02 19:13\n"
 
 #: src/app/app.js:109
 msgid "API key"
@@ -29,7 +29,7 @@ msgstr "Crowdinプロジェクトステータス"
 msgid "Done!"
 msgstr ""
 
-#: src/app/app.js:214
+#: src/app/app.js:222
 msgid "Failed fetching data from Crowdin."
 msgstr "Crowdinからデータを取得できませんでした。"
 
@@ -41,7 +41,7 @@ msgstr "1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月"
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
 msgstr "1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月"
 
-#: src/app/app.js:228
+#: src/app/app.js:236
 msgid "Loading..."
 msgstr "読み込んでいます…"
 
@@ -65,7 +65,7 @@ msgstr "プロジェクト：{{projectId}}"
 msgid "Save"
 msgstr "保存"
 
-#: src/app/app.js:220
+#: src/app/app.js:228
 msgid "Set project and API key"
 msgstr "プロジェクトとAPIキーを設定"
 
