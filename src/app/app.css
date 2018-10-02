@@ -46,8 +46,6 @@
 
 .languageProgressContainer {
     position: relative;
-
-    border-bottom: 1px dashed var(--ring-border-disabled-color);
 }
 
 .languageProgressContainer:hover {
@@ -55,21 +53,25 @@
     cursor: pointer;
 }
 
-.languageProgressBar {
-    position: absolute;
-
-    border-bottom: 1px solid var(--ring-main-color);
-}
-
-.crowdinLink {
+.absoluteStatusDone {
     float: right;
 
     margin-left: 24px;
-    color: var(--ring-secondary-color);
+    color: var(--ring-icon-success-color);
+
+}
+
+.absoluteStatusIncomplete {
+    float: right;
+
+    margin-left: 24px;
+    color: var(--ring-icon-error-color);
+
 }
 
 .languageProgressText {
     float: left;
+    min-width: 150px;
 }
 
 .statusTextContainer {
@@ -79,4 +81,18 @@
 
 .translationBlockWrapper {
     min-width: 400px;
+}
+
+.progressBarContainer {
+    float: left;
+    padding-top: 5px;
+    border-bottom: 2px solid var(--ring-icon-error-color);
+    height: 5px;
+    width: 100px;
+}
+
+.progressBar {
+    width: 100px;
+    border-bottom: 2px solid var(--ring-icon-success-color);
+    height: 100%;
 }

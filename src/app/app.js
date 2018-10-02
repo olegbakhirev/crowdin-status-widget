@@ -178,21 +178,29 @@ class Widget extends Component {
               } else {
                 flagFilename = 'pict/default_flag.png';
               }
+
+              const wordsRemaining = language.words - language.words_translated;
+              const statusStyle = wordsRemaining < 1
+                ? styles.absoluteStatusDone
+                : styles.absoluteStatusIncomplete;
+
               return (
                 <div className={styles.languageProgressContainer} onClick={() => window.open(`${crowdinProjectUrl}${language.code}#`, '_blank')}>
                   <div className={styles.statusTextContainer}>
                     <div className={styles.languageProgressText}>
                       <img className={'flag'}
-                        src={flagFilename} width={'16px'}/>
+                        src={flagFilename}/>
                       {`${language.name} ${language.translated_progress}%`}
                     </div>
-                    <div className={styles.crowdinLink}>
+                    <div className={styles.progressBarContainer}>
+                      <div className={styles.progressBar} style={{width: `${language.translated_progress}%`}}>
+                      </div>
+                    </div>
+                    <div className={statusStyle}>
                       {getMissingCountString(
                         language.words - language.words_translated)}
                     </div>
                   </div>
-                  <div className={styles.languageProgressBar}
-                    style={{width: `${language.translated_progress}%`}}></div>
                 </div>
               );
             })}
