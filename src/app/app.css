@@ -77,6 +77,7 @@
 .statusTextContainer {
     height: 24px;
     padding: 4px;
+    width: 400px;
 }
 
 .translationBlockWrapper {
