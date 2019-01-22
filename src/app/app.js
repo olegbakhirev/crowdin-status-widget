@@ -148,6 +148,15 @@ class Widget extends Component {
     });
   }
 
+  openCrowdinWindow(crowdinProjectUrl, language) {
+    window.open(`${crowdinProjectUrl}${language.code}#`, '_blank');
+  }
+
+  editWidgetSettings = () => {
+    this.props.dashboardApi.enterConfigMode();
+    this.setState({isConfiguring: true});
+  };
+
   render() {
     const {isConfiguring, data, dataFetchFailed} = this.state;
 
@@ -185,16 +194,21 @@ class Widget extends Component {
                 : styles.absoluteStatusIncomplete;
 
               return (
-                <div className={styles.languageProgressContainer} onClick={() => window.open(`${crowdinProjectUrl}${language.code}#`, '_blank')}>
+                <div
+                  key={language.name}
+                  className={styles.languageProgressContainer}
+                  onClick={this.openCrowdinWindow(crowdinProjectUrl, language)}
+                >
                   <div className={styles.statusTextContainer}>
                     <div className={styles.languageProgressText}>
-                      <img className={'flag'}
-                        src={flagFilename}/>
+                      <img
+                        className={'flag'}
+                        src={flagFilename}
+                      />
                       {`${language.name} ${language.translated_progress}%`}
                     </div>
                     <div className={styles.progressBarContainer}>
-                      <div className={styles.progressBar} style={{width: `${language.translated_progress}%`}}>
-                      </div>
+                      <div className={styles.progressBar} style={{width: `${language.translated_progress}%`}}/>
                     </div>
                     <div className={statusStyle}>
                       {getMissingCountString(
@@ -210,11 +224,6 @@ class Widget extends Component {
     }
 
     if (dataFetchFailed) {
-      const editWidgetSettings = () => {
-        this.props.dashboardApi.enterConfigMode();
-        this.setState({isConfiguring: true});
-      };
-
       return (
         <div className={styles.widget}>
           <EmptyWidget
@@ -223,7 +232,7 @@ class Widget extends Component {
           >
             <Link
               pseudo={true}
-              onClick={editWidgetSettings}
+              onClick={this.editWidgetSettings}
             >
               {i18n('Set project and API key')}
             </Link>
