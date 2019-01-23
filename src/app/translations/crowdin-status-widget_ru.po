@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2018-10-02 19:14\n"
+"PO-Revision-Date: 2019-01-23 10:05\n"
 
 #: src/app/app.js:109
 msgid "API key"
@@ -25,11 +25,11 @@ msgstr "Отмена"
 msgid "Crowdin Project Status"
 msgstr "Статус проекта в Crowdin"
 
-#: src/app/app.js:163
+#: src/app/app.js:172
 msgid "Done!"
-msgstr ""
+msgstr "Готово!"
 
-#: src/app/app.js:222
+#: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
 msgstr "Не удалось получить данные из Crowdin."
 
@@ -41,15 +41,15 @@ msgstr "январь|февраль|март|апрель|май|июнь|июл
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
 msgstr "янв|фев|мар|апр|мая|июн|июл|авг|сен|окт|ноя|дек"
 
-#: src/app/app.js:236
+#: src/app/app.js:245
 msgid "Loading..."
 msgstr "Загрузка..."
 
-#: src/app/app.js:166
+#: src/app/app.js:175
 msgid "Missing 1 word"
 msgstr "Слов без перевода: 1"
 
-#: src/app/app.js:167
+#: src/app/app.js:176
 msgid "Missing {{missingCount}} words"
 msgstr "Слов без перевода: {{missingCount}}"
 
@@ -65,9 +65,9 @@ msgstr "Проект: {{projectId}}"
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/app/app.js:228
+#: src/app/app.js:237
 msgid "Set project and API key"
-msgstr ""
+msgstr "Задать проект и ключ API"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"

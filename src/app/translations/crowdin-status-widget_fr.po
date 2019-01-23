@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: jetbrains <mikhail.vink@jetbrains.com>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2018-10-02 19:13\n"
+"PO-Revision-Date: 2019-01-23 10:05\n"
 
 #: src/app/app.js:109
 msgid "API key"
@@ -25,11 +25,11 @@ msgstr "Annuler"
 msgid "Crowdin Project Status"
 msgstr "Statut du projet Crowdin"
 
-#: src/app/app.js:163
+#: src/app/app.js:172
 msgid "Done!"
-msgstr ""
+msgstr "Terminé !"
 
-#: src/app/app.js:222
+#: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
 msgstr "Impossible d'extraire les données de Crowdin."
 
@@ -41,15 +41,15 @@ msgstr "Janvier|Février|Mars|Avril|Mai|Juin|Juillet|Août|Septembre|Octobre|Nov
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
 msgstr "Jan|Fév|Mar|Avr|Mai|Jun|Jul|Aoû|Sep|Oct|Nov|Déc"
 
-#: src/app/app.js:236
+#: src/app/app.js:245
 msgid "Loading..."
 msgstr "Chargement en cours..."
 
-#: src/app/app.js:166
+#: src/app/app.js:175
 msgid "Missing 1 word"
 msgstr "1 mot manquant"
 
-#: src/app/app.js:167
+#: src/app/app.js:176
 msgid "Missing {{missingCount}} words"
 msgstr "{{missingCount}} mots manquants"
 
@@ -65,7 +65,7 @@ msgstr "Projet : {{projectId}}"
 msgid "Save"
 msgstr "Enregistrer"
 
-#: src/app/app.js:228
+#: src/app/app.js:237
 msgid "Set project and API key"
 msgstr "Définir le projet et la clé d'API"
 
