@@ -3,79 +3,79 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: youtrackjetbrains\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: youtrackjetbrains\n"
-"X-Crowdin-Language: ja\n"
+"X-Crowdin-Language: eo\n"
 "X-Crowdin-File: /widgets/crowdin-status-widget/default.pot\n"
-"Language-Team: Japanese\n"
-"Language: ja_JP\n"
-"PO-Revision-Date: 2020-01-14 21:03\n"
+"Language-Team: Esperanto\n"
+"Language: eo_UY\n"
+"PO-Revision-Date: 2019-12-20 15:00\n"
 
 #: src/app/app.js:109
 msgid "API key"
-msgstr "APIキー"
+msgstr "crwdns789349:0crwdne789349:0"
 
 #: src/app/app.js:125
 msgid "Cancel"
-msgstr "取り消す"
+msgstr "crwdns789350:0crwdne789350:0"
 
 #: src/app/app.js:139
 msgid "Crowdin Project Status"
-msgstr "Crowdinプロジェクトステータス"
+msgstr "crwdns789351:0crwdne789351:0"
 
 #: src/app/app.js:172
 msgid "Done!"
-msgstr "完了！"
+msgstr "crwdns894420:0crwdne894420:0"
 
 #: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
-msgstr "Crowdinからデータを取得できませんでした。"
+msgstr "crwdns789352:0crwdne789352:0"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
-msgstr "1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月"
+msgstr "crwdns789353:0crwdne789353:0"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
-msgstr "1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月"
+msgstr "crwdns789354:0crwdne789354:0"
 
 #: src/app/app.js:245
 msgid "Loading..."
-msgstr "読み込んでいます…"
+msgstr "crwdns789355:0crwdne789355:0"
 
 #: src/app/app.js:175
 msgid "Missing 1 word"
-msgstr "1語足りません"
+msgstr "crwdns789356:0crwdne789356:0"
 
 #: src/app/app.js:176
 msgid "Missing {{missingCount}} words"
-msgstr "{{missingCount}}語足りません"
+msgstr "crwdns789357:0{{missingCount}}crwdne789357:0"
 
 #: src/app/app.js:100
 msgid "Project id"
-msgstr "プロジェクトid"
+msgstr "crwdns789358:0crwdne789358:0"
 
 #: src/app/app.js:138
 msgid "Project: {{projectId}}"
-msgstr "プロジェクト：{{projectId}}"
+msgstr "crwdns789359:0{{projectId}}crwdne789359:0"
 
 #: src/app/app.js:122
 msgid "Save"
-msgstr "保存"
+msgstr "crwdns789360:0crwdne789360:0"
 
 #: src/app/app.js:237
 msgid "Set project and API key"
-msgstr "プロジェクトとAPIキーを設定"
+msgstr "crwdns789361:0crwdne789361:0"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
-msgstr "日曜日|月曜日|火曜日|水曜日|木曜日|金曜日|土曜日"
+msgstr "crwdns789362:0crwdne789362:0"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
 msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
-msgstr "日|月|火|水|木|金|土"
+msgstr "crwdns789363:0crwdne789363:0"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
-msgstr "am|pm"
+msgstr "crwdns789364:0crwdne789364:0"
 
