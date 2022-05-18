@@ -1,6 +1,6 @@
 import 'babel-polyfill';
 import DashboardAddons from 'hub-dashboard-addons';
-import {setLocale, i18n} from 'hub-dashboard-addons/dist/localization';
+import {i18n} from 'hub-dashboard-addons/dist/localization';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {render} from 'react-dom';
@@ -16,7 +16,7 @@ import '@jetbrains/ring-ui/components/form/form.scss';
 
 import 'file-loader?name=[name].[ext]!../../manifest.json'; // eslint-disable-line import/no-unresolved
 
-import TRANSLATIONS from './translations';
+import {initTranslations} from './translations';
 
 import styles from './app.css';
 
@@ -250,7 +250,7 @@ class Widget extends Component {
 }
 
 DashboardAddons.registerWidget((dashboardApi, registerWidgetApi) => {
-  setLocale(DashboardAddons.locale, TRANSLATIONS);
+  initTranslations(DashboardAddons.locale);
 
   return render(
     <Widget
