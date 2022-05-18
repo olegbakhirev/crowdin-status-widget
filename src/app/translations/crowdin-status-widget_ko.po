@@ -6,78 +6,78 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Crowdin-Project: youtrackjetbrains\n"
 "X-Crowdin-Project-ID: 295498\n"
-"X-Crowdin-Language: ja\n"
+"X-Crowdin-Language: ko\n"
 "X-Crowdin-File: /widgets/crowdin-status-widget/default.pot\n"
 "X-Crowdin-File-ID: 30053\n"
-"Language-Team: Japanese\n"
-"Language: ja_JP\n"
+"Language-Team: Korean\n"
+"Language: ko_KR\n"
 "PO-Revision-Date: 2022-05-18 10:35\n"
 
 #: src/app/app.js:109
 msgid "API key"
-msgstr "APIキー"
+msgstr "API 키"
 
 #: src/app/app.js:125
 msgid "Cancel"
-msgstr "取り消す"
+msgstr "취소"
 
 #: src/app/app.js:139
 msgid "Crowdin Project Status"
-msgstr "Crowdinプロジェクトステータス"
+msgstr "Crowdin 프로젝트 상태"
 
 #: src/app/app.js:172
 msgid "Done!"
-msgstr "完了！"
+msgstr "완료!"
 
 #: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
-msgstr "Crowdinからデータを取得できませんでした。"
+msgstr "Crowdin에서 데이터를 가져오는 데 실패했습니다."
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
-msgstr "1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月"
+msgstr "1월|2월|3월|4월|5월|6월|7월|8월|9월|10월|11월|12월"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
-msgstr "1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月"
+msgstr "1월|2월|3월|4월|5월|6월|7월|8월|9월|10월|11월|12월"
 
 #: src/app/app.js:245
 msgid "Loading..."
-msgstr "読み込んでいます…"
+msgstr "로드 중…"
 
 #: src/app/app.js:175
 msgid "Missing 1 word"
-msgstr "1語足りません"
+msgstr "1 단어 미완료"
 
 #: src/app/app.js:176
 msgid "Missing {{missingCount}} words"
-msgstr "{{missingCount}}語足りません"
+msgstr "{{missingCount}} 단어 미완료"
 
 #: src/app/app.js:100
 msgid "Project id"
-msgstr "プロジェクトid"
+msgstr "프로젝트 ID"
 
 #: src/app/app.js:138
 msgid "Project: {{projectId}}"
-msgstr "プロジェクト：{{projectId}}"
+msgstr "프로젝트: {{projectId}}"
 
 #: src/app/app.js:122
 msgid "Save"
-msgstr "保存"
+msgstr "저장"
 
 #: src/app/app.js:237
 msgid "Set project and API key"
-msgstr "プロジェクトとAPIキーを設定"
+msgstr "프로젝트 및 API 키 설정"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
-msgstr "日曜日|月曜日|火曜日|水曜日|木曜日|金曜日|土曜日"
+msgstr "일요일|월요일|화요일|수요일|목요일|금요일|토요일"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
 msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
-msgstr "日|月|火|水|木|金|土"
+msgstr "일|월|화|수|목|금|토"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
-msgstr "am|pm"
+msgstr "오전|오후"
 

@@ -5,11 +5,13 @@ msgstr ""
 "Project-Id-Version: youtrackjetbrains\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: youtrackjetbrains\n"
+"X-Crowdin-Project-ID: 295498\n"
 "X-Crowdin-Language: ru\n"
 "X-Crowdin-File: /widgets/crowdin-status-widget/default.pot\n"
+"X-Crowdin-File-ID: 30053\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-01-14 21:03\n"
+"PO-Revision-Date: 2022-05-18 10:36\n"
 
 #: src/app/app.js:109
 msgid "API key"
@@ -73,7 +75,7 @@ msgstr "воскресенье|понедельник|вторник|среда|
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
 msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
-msgstr "вск|пнд|втр|срд|чтв|птн|сбт"
+msgstr "вс|пн|вт|ср|чт|пт|сб"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
