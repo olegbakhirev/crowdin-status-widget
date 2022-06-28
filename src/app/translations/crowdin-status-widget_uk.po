@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 652266\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2022-05-18 13:31\n"
+"PO-Revision-Date: 2022-06-28 22:40\n"
 
 #: src/app/app.js:109
 msgid "API key"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: src/app/app.js:125
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 #: src/app/app.js:139
 msgid "Crowdin Project Status"
@@ -35,15 +35,15 @@ msgstr ""
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
-msgstr ""
+msgstr "Січень|Лютий|Березень|Квітень|Травень|Червень|Липень|Серпень|Вересень|Жовтень|Листопад|Грудень"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
-msgstr ""
+msgstr "Січ|Лют|Бер|Кві|Тра|Чер|Лип|Сер|Вер|Жов|Лис|Гру"
 
 #: src/app/app.js:245
 msgid "Loading..."
-msgstr ""
+msgstr "Завантаження…"
 
 #: src/app/app.js:175
 msgid "Missing 1 word"
@@ -63,7 +63,7 @@ msgstr ""
 
 #: src/app/app.js:122
 msgid "Save"
-msgstr ""
+msgstr "Зберегти"
 
 #: src/app/app.js:237
 msgid "Set project and API key"
@@ -71,11 +71,11 @@ msgstr ""
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
-msgstr ""
+msgstr "Неділя|Понеділок|Вівторок|Середа|Четвер|Пʼятниця|Субота"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
 msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
-msgstr ""
+msgstr "Нд|Пн|Вт|Ср|Чт|Пт|Сб"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
