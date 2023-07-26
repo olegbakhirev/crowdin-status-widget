@@ -11,27 +11,27 @@ msgstr ""
 "X-Crowdin-File-ID: 652266\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2022-06-28 22:40\n"
+"PO-Revision-Date: 2023-05-16 00:10\n"
 
 #: src/app/app.js:109
 msgid "API key"
-msgstr ""
+msgstr "מפתח API"
 
 #: src/app/app.js:125
 msgid "Cancel"
-msgstr ""
+msgstr "ביטול"
 
 #: src/app/app.js:139
 msgid "Crowdin Project Status"
-msgstr ""
+msgstr "סטטוס פרויקט Crowdin"
 
 #: src/app/app.js:172
 msgid "Done!"
-msgstr ""
+msgstr "בוצע!"
 
 #: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
-msgstr ""
+msgstr "כשל בהשגת נתונים מ-Crowdin."
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
@@ -39,7 +39,7 @@ msgstr "ינואר|פברואר|מרץ|אפריל|מאי|יוני|יולי|או�
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
-msgstr ""
+msgstr "ינו'|פבר'|מרץ|אפר'|מאי|יונ'|יול'|אוג'|ספט'|אוק'|נוב'|דצמ'"
 
 #: src/app/app.js:245
 msgid "Loading..."
@@ -47,19 +47,19 @@ msgstr "טוען..."
 
 #: src/app/app.js:175
 msgid "Missing 1 word"
-msgstr ""
+msgstr "מילה אחת חסרה"
 
 #: src/app/app.js:176
 msgid "Missing {{missingCount}} words"
-msgstr ""
+msgstr "חסרות {{missingCount}} מילים"
 
 #: src/app/app.js:100
 msgid "Project id"
-msgstr ""
+msgstr "מזהה פרויקט"
 
 #: src/app/app.js:138
 msgid "Project: {{projectId}}"
-msgstr ""
+msgstr "פרויקט: {{projectId}}"
 
 #: src/app/app.js:122
 msgid "Save"
@@ -67,7 +67,7 @@ msgstr "שמור"
 
 #: src/app/app.js:237
 msgid "Set project and API key"
-msgstr ""
+msgstr "הגדרת פרויקט ומפתח API"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
@@ -79,5 +79,5 @@ msgstr "א'|ב'|ג'|ד'|ה'|ו'|ש'"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
-msgstr ""
+msgstr "לפנ\"צ|אחה\"צ"
 

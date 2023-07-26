@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 652266\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2022-06-28 22:40\n"
+"PO-Revision-Date: 2023-06-30 23:49\n"
 
 #: src/app/app.js:109
 msgid "API key"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/app/app.js:172
 msgid "Done!"
-msgstr ""
+msgstr "Готово!"
 
 #: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
@@ -79,5 +79,5 @@ msgstr "Нд|Пн|Вт|Ср|Чт|Пт|Сб"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
-msgstr ""
+msgstr "дп|пп"
 

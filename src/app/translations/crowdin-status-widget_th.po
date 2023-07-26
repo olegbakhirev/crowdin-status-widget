@@ -3,81 +3,81 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: youtrack-custom-localization\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Crowdin-Project: youtrack-custom-localization\n"
 "X-Crowdin-Project-ID: 309400\n"
-"X-Crowdin-Language: tr\n"
+"X-Crowdin-Language: th\n"
 "X-Crowdin-File: /widgets/crowdin-status-widget/default.pot\n"
 "X-Crowdin-File-ID: 652266\n"
-"Language-Team: Turkish\n"
-"Language: tr_TR\n"
-"PO-Revision-Date: 2023-07-19 00:07\n"
+"Language-Team: Thai\n"
+"Language: th_TH\n"
+"PO-Revision-Date: 2023-05-24 23:49\n"
 
 #: src/app/app.js:109
 msgid "API key"
-msgstr "API anahtarı"
+msgstr ""
 
 #: src/app/app.js:125
 msgid "Cancel"
-msgstr "İptal"
+msgstr ""
 
 #: src/app/app.js:139
 msgid "Crowdin Project Status"
-msgstr "Crowdin Proje Durumu"
+msgstr ""
 
 #: src/app/app.js:172
 msgid "Done!"
-msgstr "Bitti!"
+msgstr ""
 
 #: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
-msgstr "Crowdin'den veri alınamadı."
+msgstr ""
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
-msgstr "Ocak|Şubat|Mart|Nisan|Mayıs|Haziran|Temmuz|Ağustos|Eylül|Ekim|Kasım|Aralık"
+msgstr ""
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:89
 msgid "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
-msgstr "Oca|Şub|Mar|Nis|May|Haz|Tem|Ağu|Eyl|Eki|Kas|Ara"
+msgstr ""
 
 #: src/app/app.js:245
 msgid "Loading..."
-msgstr "Yükleniyor..."
+msgstr ""
 
 #: src/app/app.js:175
 msgid "Missing 1 word"
-msgstr "1 kelime eksik"
+msgstr ""
 
 #: src/app/app.js:176
 msgid "Missing {{missingCount}} words"
-msgstr "{{missingCount}} kelime eksik"
+msgstr ""
 
 #: src/app/app.js:100
 msgid "Project id"
-msgstr "Proje kimliği"
+msgstr ""
 
 #: src/app/app.js:138
 msgid "Project: {{projectId}}"
-msgstr "Proje: {{projectId}}"
+msgstr ""
 
 #: src/app/app.js:122
 msgid "Save"
-msgstr "Kaydet"
+msgstr ""
 
 #: src/app/app.js:237
 msgid "Set project and API key"
-msgstr "Proje ve API anahtarını ayarla"
+msgstr ""
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
-msgstr "Pazar|Pazartesi|Salı|Çarşamba|Perşembe|Cuma|Cumartesi"
+msgstr ""
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:87
 msgid "Sun|Mon|Tue|Wed|Thu|Fri|Sat"
-msgstr "Paz|Pzt|Sal|Çrş|Prş|Cum|Cmt"
+msgstr ""
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:91
 msgid "am|pm"
-msgstr "öö|ös"
+msgstr ""
 

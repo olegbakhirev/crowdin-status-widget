@@ -11,11 +11,11 @@ msgstr ""
 "X-Crowdin-File-ID: 652266\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2022-06-28 22:40\n"
+"PO-Revision-Date: 2023-05-19 11:26\n"
 
 #: src/app/app.js:109
 msgid "API key"
-msgstr ""
+msgstr "Klucz interfejsu API"
 
 #: src/app/app.js:125
 msgid "Cancel"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/app/app.js:172
 msgid "Done!"
-msgstr ""
+msgstr "Gotowe!"
 
 #: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
@@ -55,11 +55,11 @@ msgstr ""
 
 #: src/app/app.js:100
 msgid "Project id"
-msgstr ""
+msgstr "Identyfikator projektu"
 
 #: src/app/app.js:138
 msgid "Project: {{projectId}}"
-msgstr ""
+msgstr "Projekt: {{projectId}}"
 
 #: src/app/app.js:122
 msgid "Save"

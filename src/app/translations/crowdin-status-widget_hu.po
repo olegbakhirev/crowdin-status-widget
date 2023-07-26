@@ -11,11 +11,11 @@ msgstr ""
 "X-Crowdin-File-ID: 652266\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2022-06-28 22:40\n"
+"PO-Revision-Date: 2023-06-30 23:49\n"
 
 #: src/app/app.js:109
 msgid "API key"
-msgstr ""
+msgstr "API-kulcs"
 
 #: src/app/app.js:125
 msgid "Cancel"
@@ -23,15 +23,15 @@ msgstr "Mégsem"
 
 #: src/app/app.js:139
 msgid "Crowdin Project Status"
-msgstr ""
+msgstr "Crowdin projekt állapota"
 
 #: src/app/app.js:172
 msgid "Done!"
-msgstr ""
+msgstr "Kész!"
 
 #: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
-msgstr ""
+msgstr "Nem sikerült adatokat lekérni a Crowdintől."
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
@@ -47,19 +47,19 @@ msgstr "Betöltés..."
 
 #: src/app/app.js:175
 msgid "Missing 1 word"
-msgstr ""
+msgstr "Hiányzik 1 szó"
 
 #: src/app/app.js:176
 msgid "Missing {{missingCount}} words"
-msgstr ""
+msgstr "{{missingCount}} szó hiányzik"
 
 #: src/app/app.js:100
 msgid "Project id"
-msgstr ""
+msgstr "Projekt azonosító"
 
 #: src/app/app.js:138
 msgid "Project: {{projectId}}"
-msgstr ""
+msgstr "Projekt: {{projectId}}"
 
 #: src/app/app.js:122
 msgid "Save"
@@ -67,7 +67,7 @@ msgstr "Mentés"
 
 #: src/app/app.js:237
 msgid "Set project and API key"
-msgstr ""
+msgstr "Projekt és API-kulcs beállítása"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"

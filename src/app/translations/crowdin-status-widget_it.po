@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 652266\n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
-"PO-Revision-Date: 2022-06-28 22:40\n"
+"PO-Revision-Date: 2023-07-06 23:48\n"
 
 #: src/app/app.js:109
 msgid "API key"
@@ -23,7 +23,7 @@ msgstr "Annulla"
 
 #: src/app/app.js:139
 msgid "Crowdin Project Status"
-msgstr ""
+msgstr "Stato del progetto Crowdin"
 
 #: src/app/app.js:172
 msgid "Done!"
@@ -31,7 +31,7 @@ msgstr "Completato!"
 
 #: src/app/app.js:231
 msgid "Failed fetching data from Crowdin."
-msgstr ""
+msgstr "Impossibile recuperare i dati da Crowdin."
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:90
 msgid "January|February|March|April|May|June|July|August|September|October|November|December"
@@ -47,19 +47,19 @@ msgstr "Caricamento..."
 
 #: src/app/app.js:175
 msgid "Missing 1 word"
-msgstr ""
+msgstr "Manca 1 parola"
 
 #: src/app/app.js:176
 msgid "Missing {{missingCount}} words"
-msgstr ""
+msgstr "Mancano {{missingCount}} parole"
 
 #: src/app/app.js:100
 msgid "Project id"
-msgstr ""
+msgstr "ID progetto"
 
 #: src/app/app.js:138
 msgid "Project: {{projectId}}"
-msgstr ""
+msgstr "Progetto: {{projectId}}"
 
 #: src/app/app.js:122
 msgid "Save"
@@ -67,7 +67,7 @@ msgstr "Salva"
 
 #: src/app/app.js:237
 msgid "Set project and API key"
-msgstr ""
+msgstr "Imposta la chiave del progetto e dell'API"
 
 #: node_modules/hub-dashboard-addons/components/localization/src/localization.js:88
 msgid "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"
