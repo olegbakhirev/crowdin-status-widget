@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 30053\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-07-25 14:19\n"
+"PO-Revision-Date: 2023-07-26 17:41\n"
 
 #: src/app/app.js:109
 msgid "API key"
