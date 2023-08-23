@@ -21,4 +21,4 @@ The code of this widget except of the pict/crowdin.ico file is licensed with Apa
 
 
 # DISCLAIMER
-Crowdin logo name and icon (crowdin.ico) are registered trademark and property of Crowdin Inc.
+Crowdin logo name and icon (crowdin.ico) are registered trademark and property of OÜ Crowdin.
