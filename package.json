@@ -53,7 +53,7 @@
     "@jetbrains/eslint-config": "2.0.0",
     "@jetbrains/generator-ring-ui": "0.4.59",
     "@jetbrains/stylelint-config": "1.3.2",
-    "babel-eslint": "8.2.1",
+    "babel-eslint": "10.1.0",
     "chai": "4.1.2",
     "chai-as-promised": "7.1.1",
     "chai-dom": "1.7.0",
@@ -68,14 +68,14 @@
     "karma-mocha": "1.3.0",
     "karma-sourcemap-loader": "0.3.7",
     "karma-teamcity-reporter": "1.1.0",
-    "karma-webpack": "2.0.9",
+    "karma-webpack": "5.0.0",
     "mocha": "5.0.1",
     "react-test-renderer": "16.2.0",
     "sinon": "4.3.0",
     "sinon-chai": "2.14.0",
     "stylelint": "^9.0.0",
     "xvfb-maybe": "0.2.1",
-    "yo": "2.0.1"
+    "yo": "2.0.6"
   },
   "engines": {
     "node": ">=6.0.0"
