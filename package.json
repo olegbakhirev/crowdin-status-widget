@@ -74,7 +74,7 @@
     "sinon-chai": "2.14.0",
     "stylelint": "^9.0.0",
     "xvfb-maybe": "0.2.1",
-    "yo": "2.0.1",
+    "yo": "2.0.6",
     "webpack-cli": "^3.3.11"
   },
   "engines": {
