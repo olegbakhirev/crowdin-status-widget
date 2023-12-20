@@ -59,27 +59,35 @@
 .absoluteStatusDone {
   float: right;
 
-  margin-left: 24px;
+  margin-left: auto;
 
   color: var(--ring-icon-success-color);
 }
 
 .absoluteStatusIncomplete {
-  float: right;
+  display: inline-block;
+  overflow: hidden;
 
-  margin-left: 24px;
+  height: 100%;
+  margin-left: auto;
+
+  text-align: right;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   color: var(--ring-icon-error-color);
 }
 
 .languageProgressText {
+  display: inline-block;
   float: left;
 
-  min-width: 150px;
+  min-width: 200px;
 }
 
 .statusTextContainer {
-  width: 400px;
+  display: flex;
+
   height: 24px;
   padding: 4px;
 }
@@ -89,10 +97,14 @@
 }
 
 .progressBarContainer {
+  display: inline-block;
   float: left;
 
   width: 100px;
   height: 5px;
+  margin-right: 24px;
+
+  margin-left: 24px;
   padding-top: 5px;
 
   border-bottom: 2px solid var(--ring-icon-error-color);

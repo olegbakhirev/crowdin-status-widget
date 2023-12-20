@@ -6,21 +6,18 @@ import PropTypes from 'prop-types';
 import {render} from 'react-dom';
 import Panel from '@jetbrains/ring-ui/components/panel/panel';
 import Button from '@jetbrains/ring-ui/components/button/button';
-import Input, {Size as InputSize} from '@jetbrains/ring-ui/components/input/input';
+import Input, {
+  Size as InputSize
+} from '@jetbrains/ring-ui/components/input/input';
 import Link from '@jetbrains/ring-ui/components/link/link';
 import EmptyWidget, {EmptyWidgetFaces} from '@jetbrains/hub-widget-ui/dist/empty-widget';
 import Loader from '@jetbrains/ring-ui/components/loader/loader';
-import fetchJsonp from 'fetch-jsonp';
+
 import '@jetbrains/ring-ui/components/form/form.scss';
-
-
-import 'file-loader?name=[name].[ext]!../../manifest.json'; // eslint-disable-line import/no-unresolved
-
 import {initTranslations} from './translations';
-
 import styles from './app.css';
 
-const flaggedLanguages = ['French', 'German', 'Japanese', 'Russian', 'Spanish'];
+const flaggedLanguages = ['French', 'German', 'Japanese', 'Russian', 'Spanish', 'Korean', 'Chinese Simplified', 'Portuguese, Brazilian'];
 
 class Widget extends Component {
   static propTypes = {
@@ -54,9 +51,11 @@ class Widget extends Component {
         this.setState({isConfiguring: true});
       }
       this.setState(
-        {isConfiguring: false,
+        {
+          isConfiguring: false,
           projectId: config.projectId,
-          apiKey: config.apiKey}
+          apiKey: config.apiKey
+        }
       );
       this.loadCrowdinData();
     });
@@ -129,7 +128,7 @@ class Widget extends Component {
     );
   }
 
-  loadCrowdinData() {
+  async loadCrowdinData() {
     const {dashboardApi} = this.props;
     const {projectId, apiKey} = this.state;
 
@@ -139,23 +138,39 @@ class Widget extends Component {
         : i18n('Crowdin Project Status')
     );
     this.setState({data: null, dataFetchFailed: false});
-    fetchJsonp(`https://api.crowdin.com/api/project/${projectId}/status?key=${apiKey}`, {
-      jsonpCallback: 'jsonp'
-    }).then(response => response.json()).then(json => {
-      this.setState({data: json, dataFetchFailed: ''});
-    }).catch(() => {
+    try {
+      const listProjectResp =
+        await fetch('https://api.crowdin.com/api/v2/projects', {
+          headers: new Headers({Authorization: `Bearer ${apiKey}`})
+        });
+      const projectsJson = await listProjectResp.json();
+      const projectData =
+        projectsJson.data.find(
+          project => project.data.identifier === projectId);
+
+      const projectProgressResp =
+        await fetch(`https://api.crowdin.com/api/v2/projects/${projectData.data.id}/languages/progress`, {
+          headers: new Headers({Authorization: `Bearer ${apiKey}`})
+        });
+      const projectProgressData = await projectProgressResp.json();
+      this.setState({data: projectProgressData.data, dataFetchFailed: ''});
+    } catch (error) {
       this.setState({data: null, dataFetchFailed: true});
-    });
+    }
   }
 
-  openCrowdinWindow(crowdinProjectUrl, language) {
-    window.open(`${crowdinProjectUrl}${language.code}#`, '_blank');
+  openCrowdinWindow(crowdinProjectUrl, languageCode) {
+    window.open(`${crowdinProjectUrl}${languageCode}`, '_blank');
   }
 
   editWidgetSettings = () => {
     this.props.dashboardApi.enterConfigMode();
     this.setState({isConfiguring: true});
   };
+
+  handleOnLanguageClick(crowdinProjectUrl, languageCode) {
+    return () => this.openCrowdinWindow(crowdinProjectUrl, languageCode);
+  }
 
   render() {
     const {isConfiguring, data, dataFetchFailed} = this.state;
@@ -177,27 +192,30 @@ class Widget extends Component {
             {missingCount}, missingCount);
       };
 
+
       return (
         <div className={styles.widget}>
           <div className={styles.translationBlockWrapper}>
-            {data.map(language => {
+            {data.map(language => language.data).map(languageData => {
               let flagFilename;
-              if (flaggedLanguages.indexOf(language.name) > -1) {
-                flagFilename = `pict/${language.name.toLowerCase()}_flag.png`;
+              if (flaggedLanguages.indexOf(languageData.language.name) > -1) {
+                flagFilename = `pict/${languageData.language.threeLettersCode}.svg`;
               } else {
                 flagFilename = 'pict/default_flag.png';
               }
-
-              const wordsRemaining = language.words - language.words_translated;
+              const wordsRemaining =
+                languageData.words.total - languageData.words.translated;
               const statusStyle = wordsRemaining < 1
                 ? styles.absoluteStatusDone
                 : styles.absoluteStatusIncomplete;
-
               return (
                 <div
-                  key={language.name}
+                  key={languageData.language.name}
                   className={styles.languageProgressContainer}
-                  onClick={this.openCrowdinWindow(crowdinProjectUrl, language)}
+                  onClick={
+                    this.handleOnLanguageClick(
+                      crowdinProjectUrl, languageData.language.id)
+                  }
                 >
                   <div className={styles.statusTextContainer}>
                     <div className={styles.languageProgressText}>
@@ -205,14 +223,18 @@ class Widget extends Component {
                         className={'flag'}
                         src={flagFilename}
                       />
-                      {`${language.name} ${language.translated_progress}%`}
+                      {`${languageData.language.name} ${languageData.translationProgress}%`}
                     </div>
                     <div className={styles.progressBarContainer}>
-                      <div className={styles.progressBar} style={{width: `${language.translated_progress}%`}}/>
+                      <div
+                        className={styles.progressBar}
+                        style={{width: `${languageData.translated_progress}%`}}
+                      />
                     </div>
                     <div className={statusStyle}>
                       {getMissingCountString(
-                        language.words - language.words_translated)}
+                        languageData.words.total -
+                        languageData.words.translated)}
                     </div>
                   </div>
                 </div>
